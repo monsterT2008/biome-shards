@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "shards_of_the_globe:block/theendofspaceandtime_portal_ew"
+    },
+    "axis=x": {
+      "model": "shards_of_the_globe:block/theendofspaceandtime_portal_ns"
+    }
+  }
+}

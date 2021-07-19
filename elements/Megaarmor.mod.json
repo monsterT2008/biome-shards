@@ -1,0 +1,70 @@
+{
+  "_fv": 18,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "helmetitem",
+    "enableBody": true,
+    "textureBody": "chestplateitem",
+    "enableLeggings": true,
+    "textureLeggings": "trousersitem",
+    "enableBoots": true,
+    "textureBoots": "bootsitem",
+    "onHelmetTick": {
+      "name": "MegaarmorHelmetTickEvent"
+    },
+    "onBodyTick": {
+      "name": "MegaarmorBodyTickEvent"
+    },
+    "onLeggingsTick": {
+      "name": "MegaarmorLeggingsTickEvent"
+    },
+    "onBootsTick": {
+      "name": "MegaarmorBootsTickEvent"
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "megaarmortexture",
+    "helmetName": "§k mega helmet",
+    "bodyName": "§k mega chestplate",
+    "leggingsName": "§k mega trousers",
+    "bootsName": "§k mega boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "ModelUltimateArmor",
+    "helmetModelPart": "head",
+    "helmetModelTexture": "ultimatearmorh.png",
+    "bodyModelName": "ModelUltimateArmorB",
+    "bodyModelPart": "body",
+    "armsModelPartL": "body",
+    "armsModelPartR": "body",
+    "bodyModelTexture": "ultimatearmorc.png",
+    "leggingsModelName": "ModelUltimateArmorL",
+    "leggingsModelPartL": "leftLeg",
+    "leggingsModelPartR": "leftLeg",
+    "leggingsModelTexture": "ultimatearmorbnl.png",
+    "bootsModelName": "ModelUltimateArmorB2",
+    "bootsModelPartL": "bootR",
+    "bootsModelPartR": "bootR",
+    "bootsModelTexture": "ultimatearmorbnl.png",
+    "maxDamage": 25,
+    "damageValueHelmet": 10,
+    "damageValueBody": 10,
+    "damageValueLeggings": 10,
+    "damageValueBoots": 10,
+    "enchantability": 10,
+    "toughness": 7.5,
+    "knockbackResistance": 5.0,
+    "equipSound": {
+      "value": "ambient.cave"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Repaircore"
+      }
+    ]
+  }
+}
