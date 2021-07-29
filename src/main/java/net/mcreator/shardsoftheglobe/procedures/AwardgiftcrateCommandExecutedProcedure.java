@@ -31,7 +31,7 @@ public class AwardgiftcrateCommandExecutedProcedure extends ShardsOfTheGlobeModE
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((Math.random() >= 0.9)) {
+		if ((Math.random() < 0.5)) {
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;
@@ -173,7 +173,7 @@ public class AwardgiftcrateCommandExecutedProcedure extends ShardsOfTheGlobeModE
 													}
 													MinecraftForge.EVENT_BUS.unregister(this);
 												}
-											}.start(world, (int) 30);
+											}.start(world, (int) 20);
 											MinecraftForge.EVENT_BUS.unregister(this);
 										}
 									}.start(world, (int) 20);
@@ -269,37 +269,6 @@ public class AwardgiftcrateCommandExecutedProcedure extends ShardsOfTheGlobeModE
 													"title @a title \"Elliemaexx\"");
 										}
 									}
-									MinecraftForge.EVENT_BUS.unregister(this);
-								}
-							}.start(world, (int) 20);
-							new Object() {
-								private int ticks = 0;
-								private float waitTicks;
-								private IWorld world;
-								public void start(IWorld world, int waitTicks) {
-									this.waitTicks = waitTicks;
-									MinecraftForge.EVENT_BUS.register(this);
-									this.world = world;
-								}
-
-								@SubscribeEvent
-								public void tick(TickEvent.ServerTickEvent event) {
-									if (event.phase == TickEvent.Phase.END) {
-										this.ticks += 1;
-										if (this.ticks >= this.waitTicks)
-											run();
-									}
-								}
-
-								private void run() {
-									{
-										Entity _ent = entity;
-										if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-											_ent.world.getServer().getCommandManager().handleCommand(
-													_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-													"title @a title \"zoshthemosh\"");
-										}
-									}
 									new Object() {
 										private int ticks = 0;
 										private float waitTicks;
@@ -325,7 +294,7 @@ public class AwardgiftcrateCommandExecutedProcedure extends ShardsOfTheGlobeModE
 												if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 													_ent.world.getServer().getCommandManager().handleCommand(
 															_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-															"title @a title \"navymarrow52268\"");
+															"title @a title \"zoshthemosh\"");
 												}
 											}
 											new Object() {
@@ -353,9 +322,40 @@ public class AwardgiftcrateCommandExecutedProcedure extends ShardsOfTheGlobeModE
 														if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 															_ent.world.getServer().getCommandManager().handleCommand(
 																	_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-																	"title @a title \"pandaboi22300\"");
+																	"title @a title \"navymarrow52268\"");
 														}
 													}
+													new Object() {
+														private int ticks = 0;
+														private float waitTicks;
+														private IWorld world;
+														public void start(IWorld world, int waitTicks) {
+															this.waitTicks = waitTicks;
+															MinecraftForge.EVENT_BUS.register(this);
+															this.world = world;
+														}
+
+														@SubscribeEvent
+														public void tick(TickEvent.ServerTickEvent event) {
+															if (event.phase == TickEvent.Phase.END) {
+																this.ticks += 1;
+																if (this.ticks >= this.waitTicks)
+																	run();
+															}
+														}
+
+														private void run() {
+															{
+																Entity _ent = entity;
+																if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+																	_ent.world.getServer().getCommandManager().handleCommand(
+																			_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+																			"title @a title \"pandaboi22300\"");
+																}
+															}
+															MinecraftForge.EVENT_BUS.unregister(this);
+														}
+													}.start(world, (int) 20);
 													MinecraftForge.EVENT_BUS.unregister(this);
 												}
 											}.start(world, (int) 20);
