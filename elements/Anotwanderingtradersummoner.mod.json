@@ -3,10 +3,10 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "pressy",
+    "texture": "anotwanderingtradersummoner",
     "customModelName": "Normal",
-    "name": "Giftedsubpressent",
-    "rarity": "COMMON",
+    "name": "A not wandering trader summoner",
+    "rarity": "EPIC",
     "creativeTab": {
       "value": "MISC"
     },
@@ -24,10 +24,18 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInfo": [
+      "right click in hand to summon a not wandering trader"
+    ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 64
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "AnotwanderingtradersummonerRightClickedInAir"
+    },
+    "onRightClickedOnBlock": {
+      "name": "AnotwanderingtradersummonerRightClickedInAir"
+    }
   }
 }

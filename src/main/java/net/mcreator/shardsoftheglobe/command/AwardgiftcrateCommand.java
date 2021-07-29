@@ -11,7 +11,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.command.Commands;
 import net.minecraft.command.CommandSource;
 
-import net.mcreator.shardsoftheglobe.procedures.TwitchconnectCommandExecutedProcedure;
+import net.mcreator.shardsoftheglobe.procedures.AwardgiftcrateCommandExecutedProcedure;
 import net.mcreator.shardsoftheglobe.ShardsOfTheGlobeModElements;
 
 import java.util.Map;
@@ -23,9 +23,9 @@ import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.arguments.StringArgumentType;
 
 @ShardsOfTheGlobeModElements.ModElement.Tag
-public class TwitchconnectCommand extends ShardsOfTheGlobeModElements.ModElement {
-	public TwitchconnectCommand(ShardsOfTheGlobeModElements instance) {
-		super(instance, 10);
+public class AwardgiftcrateCommand extends ShardsOfTheGlobeModElements.ModElement {
+	public AwardgiftcrateCommand(ShardsOfTheGlobeModElements instance) {
+		super(instance, 27);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
@@ -35,7 +35,7 @@ public class TwitchconnectCommand extends ShardsOfTheGlobeModElements.ModElement
 	}
 
 	private LiteralArgumentBuilder<CommandSource> customCommand() {
-		return LiteralArgumentBuilder.<CommandSource>literal("twitch_connections")
+		return LiteralArgumentBuilder.<CommandSource>literal("awardgiftcrate").requires(s -> s.hasPermissionLevel(4))
 				.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(this::execute)).executes(this::execute);
 	}
 
@@ -57,11 +57,8 @@ public class TwitchconnectCommand extends ShardsOfTheGlobeModElements.ModElement
 		{
 			Map<String, Object> $_dependencies = new HashMap<>();
 			$_dependencies.put("entity", entity);
-			$_dependencies.put("x", x);
-			$_dependencies.put("y", y);
-			$_dependencies.put("z", z);
 			$_dependencies.put("world", world);
-			TwitchconnectCommandExecutedProcedure.executeProcedure($_dependencies);
+			AwardgiftcrateCommandExecutedProcedure.executeProcedure($_dependencies);
 		}
 		return 0;
 	}

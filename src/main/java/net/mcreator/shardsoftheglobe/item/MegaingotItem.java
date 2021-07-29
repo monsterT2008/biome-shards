@@ -12,11 +12,11 @@ import net.minecraft.block.BlockState;
 import net.mcreator.shardsoftheglobe.ShardsOfTheGlobeModElements;
 
 @ShardsOfTheGlobeModElements.ModElement.Tag
-public class GiftedsubpressentItem extends ShardsOfTheGlobeModElements.ModElement {
-	@ObjectHolder("shards_of_the_globe:giftedsubpressent")
+public class MegaingotItem extends ShardsOfTheGlobeModElements.ModElement {
+	@ObjectHolder("shards_of_the_globe:megaingot")
 	public static final Item block = null;
-	public GiftedsubpressentItem(ShardsOfTheGlobeModElements instance) {
-		super(instance, 8);
+	public MegaingotItem(ShardsOfTheGlobeModElements instance) {
+		super(instance, 9);
 	}
 
 	@Override
@@ -25,8 +25,8 @@ public class GiftedsubpressentItem extends ShardsOfTheGlobeModElements.ModElemen
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("giftedsubpressent");
+			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.RARE));
+			setRegistryName("megaingot");
 		}
 
 		@Override
@@ -41,7 +41,7 @@ public class GiftedsubpressentItem extends ShardsOfTheGlobeModElements.ModElemen
 
 		@Override
 		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-			return 1F;
+			return 0F;
 		}
 	}
 }

@@ -1,0 +1,26 @@
+{
+  "group": "shards_of_the_globe",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "shards_of_the_globe:megaingot"
+    },
+    "2": {
+      "item": "shards_of_the_globe:megaingot"
+    },
+    "3": {
+      "item": "shards_of_the_globe:megaingot"
+    },
+    "5": {
+      "item": "shards_of_the_globe:megaingot"
+    }
+  },
+  "result": {
+    "item": "shards_of_the_globe:megaarmor_boots",
+    "count": 1
+  }
+}

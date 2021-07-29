@@ -5,36 +5,32 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
-import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
-
-import net.mcreator.shardsoftheglobe.ShardsOfTheGlobeMod;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 @OnlyIn(Dist.CLIENT)
-public class ConnecttwitchGuiWindow extends ContainerScreen<ConnecttwitchGui.GuiContainerMod> {
+public class AnotwanderingtraderguiGuiWindow extends ContainerScreen<AnotwanderingtraderguiGui.GuiContainerMod> {
 	private World world;
 	private int x, y, z;
 	private PlayerEntity entity;
-	public ConnecttwitchGuiWindow(ConnecttwitchGui.GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
+	public AnotwanderingtraderguiGuiWindow(AnotwanderingtraderguiGui.GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.xSize = 431;
-		this.ySize = 247;
+		this.xSize = 203;
+		this.ySize = 191;
 	}
-	private static final ResourceLocation texture = new ResourceLocation("shards_of_the_globe:textures/connecttwitch.png");
+	private static final ResourceLocation texture = new ResourceLocation("shards_of_the_globe:textures/anotwanderingtradergui.png");
 	@Override
 	public void render(MatrixStack ms, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(ms);
@@ -70,8 +66,8 @@ public class ConnecttwitchGuiWindow extends ContainerScreen<ConnecttwitchGui.Gui
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
-		this.font.drawString(ms, "Stream Deck", 178, 22, -12829636);
-		this.font.drawString(ms, "Twitch connections:", 29, 74, -12829636);
+		this.font.drawString(ms, "netherite here:", 5, 15, -12829636);
+		this.font.drawString(ms, "turns into", 71, 36, -12829636);
 	}
 
 	@Override
@@ -84,17 +80,5 @@ public class ConnecttwitchGuiWindow extends ContainerScreen<ConnecttwitchGui.Gui
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
-		this.addButton(new Button(this.guiLeft + 27, this.guiTop + 94, 60, 20, new StringTextComponent("Connect"), e -> {
-			if (true) {
-				ShardsOfTheGlobeMod.PACKET_HANDLER.sendToServer(new ConnecttwitchGui.ButtonPressedMessage(0, x, y, z));
-				ConnecttwitchGui.handleButtonAction(entity, 0, x, y, z);
-			}
-		}));
-		this.addButton(new Button(this.guiLeft + 26, this.guiTop + 125, 75, 20, new StringTextComponent("Dissconect"), e -> {
-			if (true) {
-				ShardsOfTheGlobeMod.PACKET_HANDLER.sendToServer(new ConnecttwitchGui.ButtonPressedMessage(1, x, y, z));
-				ConnecttwitchGui.handleButtonAction(entity, 1, x, y, z);
-			}
-		}));
 	}
 }

@@ -1,0 +1,39 @@
+{
+  "group": "shards_of_the_globe",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "shards_of_the_globe:megaingot"
+    },
+    "2": {
+      "item": "shards_of_the_globe:megaingot"
+    },
+    "3": {
+      "item": "shards_of_the_globe:megaingot"
+    },
+    "4": {
+      "item": "shards_of_the_globe:megaingot"
+    },
+    "5": {
+      "item": "shards_of_the_globe:megaingot"
+    },
+    "6": {
+      "item": "shards_of_the_globe:megaingot"
+    },
+    "7": {
+      "item": "shards_of_the_globe:megaingot"
+    },
+    "8": {
+      "item": "shards_of_the_globe:megaingot"
+    }
+  },
+  "result": {
+    "item": "shards_of_the_globe:megaarmor_chestplate",
+    "count": 1
+  }
+}

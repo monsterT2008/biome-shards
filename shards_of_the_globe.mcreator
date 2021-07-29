@@ -132,90 +132,196 @@
       }
     },
     {
-      "name": "Giftedsubpressent",
+      "name": "Clue1",
       "type": "item",
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "giftedsubpressent"
+      "registry_name": "clue_1"
     },
     {
-      "name": "Whenconnectclickeddo",
-      "type": "procedure",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "whenconnectclickeddo",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Whendissconectclickeddo",
-      "type": "procedure",
+      "name": "Megaingot",
+      "type": "item",
       "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "whendissconectclickeddo",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
+      "registry_name": "megaingot"
     },
     {
-      "name": "Connecttwitch",
+      "name": "Anotwanderingtradergui",
       "type": "gui",
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "connecttwitch"
+      "registry_name": "anotwanderingtradergui"
     },
     {
-      "name": "TwitchconnectCommandExecuted",
+      "name": "Whennethputinslot0",
       "type": "procedure",
-      "sortid": 10,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "twitchconnect_command_executed",
+      "registry_name": "whennethputinslot_0",
       "metadata": {
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Anotwanderingtrader",
+      "type": "mob",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "anotwanderingtrader"
+    },
+    {
+      "name": "MegaPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mega_pickaxe_recipe"
+    },
+    {
+      "name": "MegaAxeRecipe",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mega_axe_recipe"
+    },
+    {
+      "name": "MegaSwordRecipe",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mega_sword_recipe"
+    },
+    {
+      "name": "MegaShovelRecipe",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mega_shovel_recipe"
+    },
+    {
+      "name": "MegaHoeRecipe",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mega_hoe_recipe"
+    },
+    {
+      "name": "Megahelmetrecipie",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "megahelmetrecipie"
+    },
+    {
+      "name": "Megachestplaterecipie",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "megachestplaterecipie"
+    },
+    {
+      "name": "Megatrousersrecipie",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "megatrousersrecipie"
+    },
+    {
+      "name": "Megabootsrecipie",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "megabootsrecipie"
+    },
+    {
+      "name": "AnotwanderingtradersummonerRightClickedInAir",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "anotwanderingtradersummoner_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
           {
-            "name": "x",
-            "type": "number"
-          },
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Anotwanderingtradersummoner",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "anotwanderingtradersummoner"
+    },
+    {
+      "name": "Anotwanderingtradersummonerrecipie",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "anotwanderingtradersummonerrecipie"
+    },
+    {
+      "name": "Giftcrategui",
+      "type": "gui",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "giftcrategui"
+    },
+    {
+      "name": "AwardgiftcrateCommandExecuted",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "awardgiftcrate_command_executed",
+      "metadata": {
+        "dependencies": [
           {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
+            "name": "entity",
+            "type": "entity"
           },
           {
             "name": "world",
@@ -225,13 +331,22 @@
       }
     },
     {
-      "name": "Twitchconnect",
+      "name": "Awardgiftcrate",
       "type": "command",
-      "sortid": 10,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "twitchconnect"
+      "registry_name": "awardgiftcrate"
+    },
+    {
+      "name": "Giftcrate",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "giftcrate"
     }
   ],
   "variable_elements": [
@@ -245,14 +360,19 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.shards_of_the_globe.giftedsubpressent": "Giftedsubpressent",
+      "entity.shards_of_the_globe.anotwanderingtrader": "A not wandering trader",
       "item.shards_of_the_globe.repaircore": "Repair core",
-      "item.shards_of_the_globe.theendofspaceandtime": "space and time pearl",
+      "item.shards_of_the_globe.theendofspaceandtime": "the globe",
+      "item.shards_of_the_globe.megaingot": "§k Megaingot",
       "item.shards_of_the_globe.megaarmor_helmet": "§k mega helmet",
-      "item.shards_of_the_globe.megaarmor_leggings": "§k mega trousers",
       "item.shards_of_the_globe.megaarmor_chestplate": "§k mega chestplate",
       "biome.shards_of_the_globe.flat": "Flat",
-      "item.shards_of_the_globe.megaarmor_boots": "§k mega boots"
+      "item.shards_of_the_globe.anotwanderingtradersummoner": "A not wandering trader summoner",
+      "item.shards_of_the_globe.megaarmor_boots": "§k mega boots",
+      "block.shards_of_the_globe.giftcrate": "Gift crate",
+      "item.shards_of_the_globe.anotwanderingtrader_spawn_egg": "A not wandering trader Spawn Egg",
+      "item.shards_of_the_globe.megaarmor_leggings": "§k mega trousers",
+      "item.shards_of_the_globe.clue_1": "§l§3Clue 1"
     }
   },
   "foldersRoot": {

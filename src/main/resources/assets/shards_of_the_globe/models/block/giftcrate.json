@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "shards_of_the_globe:blocks/portalendofspaceandtime",
+    "up": "shards_of_the_globe:blocks/portalendofspaceandtime",
+    "north": "shards_of_the_globe:blocks/portalendofspaceandtime",
+    "east": "shards_of_the_globe:blocks/portalendofspaceandtime",
+    "south": "shards_of_the_globe:blocks/portalendofspaceandtime",
+    "west": "shards_of_the_globe:blocks/portalendofspaceandtime",
+    "particle": "shards_of_the_globe:blocks/portalendofspaceandtime"
+  }
+}

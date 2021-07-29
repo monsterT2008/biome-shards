@@ -1,0 +1,30 @@
+{
+  "group": "shards_of_the_globe",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "shards_of_the_globe:megaingot"
+    },
+    "1": {
+      "item": "shards_of_the_globe:megaingot"
+    },
+    "2": {
+      "item": "shards_of_the_globe:megaingot"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "shards_of_the_globe:mega_pickaxe",
+    "count": 1
+  }
+}
