@@ -31,7 +31,7 @@ public class AwardgiftcrateCommandExecutedProcedure extends ShardsOfTheGlobeModE
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((Math.random() >= 0)) {
+		if ((Math.random() >= 0.9)) {
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;
@@ -173,7 +173,7 @@ public class AwardgiftcrateCommandExecutedProcedure extends ShardsOfTheGlobeModE
 													}
 													MinecraftForge.EVENT_BUS.unregister(this);
 												}
-											}.start(world, (int) 20);
+											}.start(world, (int) 30);
 											MinecraftForge.EVENT_BUS.unregister(this);
 										}
 									}.start(world, (int) 20);
